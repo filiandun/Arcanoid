@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="game style.css" />
+
+    <script src="game scripts.js" type="module"></script>
+    <script src="game objects.js" type="module"></script>
+    <script src="game levels.js" type="module"></script>
+
+    <link rel="icon" href="icon.png" type="image/x-icon">
+
+    <title>Arkanoid game</title>
+</head>
+
+<body>
+    <div class="logo">
+        <h1>ARCANOID</h1>
+        <img src="icon.png"/>
+    </div>
+
+    <div class="game">
+        <div class="info">
+            <p>ЖИЗНЕЙ: <span id="lives">5</span></p>
+
+            <div id="level-selection">
+                <input class="button" id="button-previous-level" type="button" value="<" tabindex="-1" />
+                <p>ТЕКУЩИЙ УРОВЕНЬ <span id="level"></span></p>
+                <input class="button" id="button-next-level" type="button" value=">" tabindex="-1" />
+            </div>
+
+            <div id="difficulty-selection">
+                <p>УРОВЕНЬ СЛОЖНОСТИ: <span id="level"></span></p>
+                <input class="range" id="range-difficulty" type="range" min="1" max="5" value="1" />
+            </div>
+        </div>
+
+        <canvas width="400" height="500" id="game"></canvas>
+
+        <div class="info">
+            <p><img src="Images/doubleBalls.png">удвоение кол-ва шаров</p>
+            <p><img src="Images/bigBall.png">увеличение шара</p>
+            <p><img src="Images/smallBall.png">уменьшение шара</p>
+
+            <p><img src="Images/longPaddle.png">увеличение платформы</p>
+            <p><img src="Images/shortPaddle.png">уменьшение платформы</p>
+
+            <p><img src="Images/death.png">минус жизнь</p>
+            <p><img src="Images/life.png">плюс жизнь</p>
+
+            <p><img src="Images/fast.png">увеличение скорости</p>
+            <p><img src="Images/slow.png">уменьшение скорости</p>
+        </div>
+    </div>
+</body>
+</html>

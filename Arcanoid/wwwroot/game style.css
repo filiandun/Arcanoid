@@ -1,0 +1,87 @@
+﻿@font-face {
+    font-family: '8bit';
+    src: url('8bit.otf') format('opentype');
+}
+
+html, body 
+{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    height: 100%;
+}
+
+body 
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(0, 0, 0);
+}
+
+.game 
+{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.logo 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo h1 
+{
+    font-family: '8bit';
+    font-size: 100px;
+
+    color: white;
+}
+
+.logo img 
+{
+    margin-top: 20px;
+
+    width: 100px;
+    height: 100px;
+}
+
+.info 
+{
+    margin: 50px;
+
+    font-family: '8bit';
+    color: white;
+}
+
+#level-selection 
+{
+    display: inline-flex;
+}
+
+.button 
+{
+    margin: 15px 2px;
+    height: 20px;
+}
+
+.range 
+{
+    width: 290px;
+}
+
+.info img 
+{
+    margin-right: 5px;
+
+    width: 20px;
+    height: 20px;
+}
